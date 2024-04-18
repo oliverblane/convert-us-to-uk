@@ -11,6 +11,7 @@ pip install convert-us-to-uk
 ## Usage
 
 ```python
+from convert_us_to_uk.converter import convert_to_uk
 text = "Colors are my favorite things."
 uk_text = convert_to_uk(text)
 print(uk_text)
