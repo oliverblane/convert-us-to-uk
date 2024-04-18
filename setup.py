@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='convert-us-to-uk',
-    version='0.1.0',
+    version='0.1.3',
     packages=find_packages(),
     include_package_data=True,
     description='A simple utility to convert US spelling to UK spelling.',
@@ -10,6 +10,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Oliver Blane',
     author_email='oliverblane72@gmail.com',
+    url='https://github.com/oliverblane/convert-us-to-uk/tree/main',
     install_requires=[
     ],
     python_requires='>=3.10',

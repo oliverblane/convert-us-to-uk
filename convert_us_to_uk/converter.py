@@ -1,9 +1,11 @@
 import csv
 import re
+import pkg_resources
 
 # Load the US to UK spelling dictionary
 def load_spelling_dict(filename):
-    with open(filename, mode='r', encoding='utf-8') as file:
+    file_path = pkg_resources.resource_filename('convert_us_to_uk', filename)
+    with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         return {row['us']: row['uk'] for row in reader}
 
