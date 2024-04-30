@@ -20,7 +20,7 @@ def convert_to_uk(text):
             # Create a case-matched replacement
             replacement = match_case(word, spelling_dict[word_lower])
             # Replace keeping the same case (assuming all dictionary entries are lowercase)
-            output = re.sub(r'\b' + re.escape(word) + r'\b', replacement, output, flags=re.IGNORECASE)
+            output = re.sub(r'\b' + re.escape(word) + r'\b', replacement, output) # , flags=re.IGNORECASE
 
     return output
 
