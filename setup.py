@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='convert-us-to-uk',
-    version='0.1.7',
+    version='0.1.9',
     packages=find_packages(),
     include_package_data=True,
     description='A simple utility to convert US spelling to UK spelling.',
